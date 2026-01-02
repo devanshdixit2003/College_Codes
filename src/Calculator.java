@@ -44,9 +44,9 @@ public class Calculator {
     // ---------- Main Menu ----------
     public static void main(String[] args) {
         Scanner dd = new Scanner(System.in);
-        int choice;
+        int choice = -1;
         
-        do {
+        while(choice !=0)
             System.out.println("\n===== Calculator Menu =====");
             System.out.println("1. Addition");
             System.out.println("2. Subtraction");
@@ -60,7 +60,7 @@ public class Calculator {
             System.out.print("Enter your choice: ");
             choice = dd.nextInt();
 
-            switch (choice) {
+              switch (choice) {
                 case 1:
                     System.out.print("Enter two numbers: ");
                     int a1 = dd.nextInt();
@@ -71,7 +71,7 @@ public class Calculator {
                 case 2:
                     System.out.print("Enter two numbers: ");
                     int a2 = dd.nextInt();
-                    int b2 = dd.nextInt();
+                 int b2 = dd.nextInt();
                     System.out.println("Subtraction = " + subtract(a2, b2));
                     break;
 
@@ -117,13 +117,16 @@ public class Calculator {
                 case 9:
                     System.out.println("Exiting...");
                     break;
-
+                case 0: 
+                    System.out.println("Code execute successfully");
+                    return;
                 default:
                     System.out.println("Invalid choice! Try again.");
             }
 
-        } while (choice != 9);
+        } 
 
         dd.close();
     }
 }
+
