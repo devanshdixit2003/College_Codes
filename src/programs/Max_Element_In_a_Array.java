@@ -1,3 +1,4 @@
+package programs;
 
 import java.util.Scanner;
 public class Max_Element_In_a_Array {
@@ -19,5 +20,6 @@ public static void main(String[]args) {
 	 }
 	 System.out.println("Max Element in a Array = "+ max_Ele);
 	 System.out.println("Program execute Successfuly Thank you ");
+dd.close();
 }
 }
