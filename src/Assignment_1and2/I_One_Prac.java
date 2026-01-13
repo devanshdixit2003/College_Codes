@@ -1,4 +1,4 @@
-package programs;
+package Assignment_1and2;
 
 class E{
 	

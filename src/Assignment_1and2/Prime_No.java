@@ -1,4 +1,4 @@
-package programs;
+package Assignment_1and2;
 import java.util.Scanner;
 public class Prime_No {
 	
